@@ -4,7 +4,7 @@ import ffmpeg
 from cv2 import CAP_PROP_FPS, VideoCapture
 
 
-def convert_3D_video(
+def convert_3d(
     in_video: str,
     in_type: str,
     out_video: str,
@@ -32,7 +32,7 @@ def convert_3D_video(
     ffmpeg.run(stream)
 
 
-def convert_2D_videos(
+def convert_2d_to_3d(
     in_video_left: str,
     in_video_right: str,
     use_audio_left: bool,
@@ -44,10 +44,10 @@ def convert_2D_videos(
     overwrite: bool = False,
 ) -> None:
     """
-    Given two videos of identical dimensions and constant framerates, converts
-    to a 3D video of the specified type (see
+    Given two separate stereo videos of identical dimensions and constant
+    framerates, combines into a 3D video of the specified type (see
     https://ffmpeg.org/ffmpeg-filters.html#stereo3d for available output type
-    strings). For example, to convert the videos to a full-width parallel view
+    strings). For example, to combine the videos into a full-width parallel view
     video, the `out_type` would be `"sbsl"`.
 
     The audio from either or both videos may be used, depending on the value of

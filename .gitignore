@@ -1,0 +1,5 @@
+*__pycache__/
+.vscode/
+dist/
+3d_video_converter.egg-info/
+build/
