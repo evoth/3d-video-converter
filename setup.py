@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 setup(
     name="3d-video-converter",
     packages=["video_converter_3d"],
-    version="0.0.1",
+    version="0.0.2",
     author="Ethan Voth",
     author_email="ethanvoth7@gmail.com",
     url="https://github.com/evoth/3d-video-converter",
