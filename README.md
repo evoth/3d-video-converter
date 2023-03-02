@@ -15,7 +15,7 @@ pip install 3d-video-converter
 Or from the source on GitHub:
 
 ```bash
-pip install "3d-video-convverter @ git+https://github.com/evoth/3d-video-converter"
+pip install "3d-video-converter @ git+https://github.com/evoth/3d-video-converter"
 ```
 
 The package will be installed with the module name `video_converter_3d`.
